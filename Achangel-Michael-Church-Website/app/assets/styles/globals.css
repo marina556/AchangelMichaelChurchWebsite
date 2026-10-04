@@ -1,0 +1,13 @@
+
+@import "./_reset.scss";
+@import "tailwindcss";
+
+
+
+@theme {
+  --color-beige: #DFB378;
+  --color-secondary: #d4af37;
+
+
+   --font-thmanyah: "ThmanyahSerifDisplay", serif;
+}

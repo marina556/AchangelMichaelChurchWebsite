@@ -1,14 +1,9 @@
 <template>
-    <div>
-        homepage
-    </div>
+  <div class="w-full h-full p-10">
+    <HomeSwiper />
+  </div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-
-</style>
+<style lang="scss" scoped></style>
