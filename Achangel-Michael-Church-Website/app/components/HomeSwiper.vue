@@ -13,7 +13,7 @@
           <NuxtImg
             :src="slide"
             alt="Church banner"
-            class="w-full h-auto rounded-4xl"
+            class="w-full h-auto rounded-4xl object-cover"
           />
         </swiper-slide>
       </swiper-container>
@@ -63,7 +63,7 @@ const swiper = useSwiper(containerRef, {
   loop: true,
 
   autoplay: {
-    delay: 3000,
+    delay: 5000,
   },
 })
 
@@ -81,9 +81,4 @@ const handleSlideChange = (event) => {
 </script>
 
 <style>
-swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 </style>

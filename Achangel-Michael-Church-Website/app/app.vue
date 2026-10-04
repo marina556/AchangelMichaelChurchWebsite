@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="font-thmanyah">
+  <div id="app" class="font-thmanyah bg-white">
     <NuxtPage />
   </div>
 </template>

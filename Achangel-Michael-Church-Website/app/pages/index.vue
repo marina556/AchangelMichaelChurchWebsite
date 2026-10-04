@@ -1,6 +1,10 @@
 <template>
   <div class="w-full h-full p-10">
-    <HomeSwiper />
+    <div class="relative">
+      <HomeSwiper />
+      <BannerLogo />
+    </div>
+    <HomeContent />
   </div>
 </template>
 

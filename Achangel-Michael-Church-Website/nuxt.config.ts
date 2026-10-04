@@ -1,56 +1,86 @@
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
+
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "ar",
+        dir: "rtl",
+      },
+
+      title: "Archangel Michael Church",
+
+      meta: [
+        {
+          name: "description",
+          content: "Official website of Archangel Michael Church.",
+        },
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1",
+        },
+        {
+          name: "robots",
+          content: "index, follow",
+        },
+      ],
+
+      link: [
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico",
+        },
+      ],
+    },
+  },
 
   devtools: {
     enabled: true,
   },
 
-  modules: [
-    '@nuxt/image',
-    'nuxt-swiper',
-    '@nuxt/fonts',
-  ],
+  modules: ["@nuxt/image", "nuxt-swiper", "@nuxt/fonts"],
 
   fonts: {
-  families: [
+    families: [
       {
-        name: 'ThmanyahSerifDisplay',
-        src: '/fonts/thmanyahserifdisplay-Light.woff2',
+        name: "ThmanyahSerifDisplay",
+        src: "/fonts/thmanyahserifdisplay-Light.woff2",
         weight: 300,
-        style: 'normal',
+        style: "normal",
       },
       {
-        name: 'ThmanyahSerifDisplay',
-        src: '/fonts/thmanyahserifdisplay-Regular.woff2',
+        name: "ThmanyahSerifDisplay",
+        src: "/fonts/thmanyahserifdisplay-Regular.woff2",
         weight: 400,
-        style: 'normal',
+        style: "normal",
       },
       {
-        name: 'ThmanyahSerifDisplay',
-        src: '/fonts/thmanyahserifdisplay-Medium.woff2',
+        name: "ThmanyahSerifDisplay",
+        src: "/fonts/thmanyahserifdisplay-Medium.woff2",
         weight: 500,
-        style: 'normal',
+        style: "normal",
       },
       {
-        name: 'ThmanyahSerifDisplay',
-        src: '/fonts/thmanyahserifdisplay-Bold.woff2',
+        name: "ThmanyahSerifDisplay",
+        src: "/fonts/thmanyahserifdisplay-Bold.woff2",
         weight: 700,
-        style: 'normal',
+        style: "normal",
       },
       {
-        name: 'ThmanyahSerifDisplay',
-        src: '/fonts/thmanyahserifdisplay-Black.woff2',
+        name: "ThmanyahSerifDisplay",
+        src: "/fonts/thmanyahserifdisplay-Black.woff2",
         weight: 900,
-        style: 'normal',
+        style: "normal",
       },
     ],
   },
 
   components: [
     {
-      path: '~/components',
+      path: "~/components",
       pathPrefix: false,
     },
   ],
@@ -58,12 +88,8 @@ export default defineNuxtConfig({
   image: {},
 
   vite: {
-    plugins: [
-      tailwindcss(),
-    ],
+    plugins: [tailwindcss()],
   },
 
-  css: [
-    '~/assets/styles/globals.css',
-  ],
+  css: ["~/assets/styles/globals.css"],
 });
