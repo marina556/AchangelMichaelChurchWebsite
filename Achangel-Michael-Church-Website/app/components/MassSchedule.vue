@@ -13,11 +13,11 @@
                             subsectionClasses,
                             item.highlighted && 'bg-beige-light',
                         ]">
-                            <h4 class="text-center mb-2 font-normal text-[0.875rem]">
+                            <h4 class="text-center mb-2 font-normal text-base">
                                 {{ item.title }}
                             </h4>
 
-                            <p class="text-center text-[0.875rem] font-light leading-4.75">
+                            <p class="text-center text-base font-light leading-4.75">
                                 من {{ item.from }}
                                 <!-- <br /> -->
                                 حــتي {{ item.to }}

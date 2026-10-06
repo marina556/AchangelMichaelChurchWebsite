@@ -1,8 +1,20 @@
 <template>
     <div class="flex gap-4 h-128">
+        <div class="fixed inset-0 z-20 grid place-content-center bg-black/90" @click.self="imageIsOpen = false" v-if="imageIsOpen">
+            <span class="text-2xl text-white cursor-pointer absolute top-8 right-8 transition-all hover:border border-white w-14 h-14 rounded-full grid place-content-center font-arial" @click="imageIsOpen = false">X</span>
+            <NuxtImg src="/events/Temp1.png" alt="Event Image" class="w-[80vw] max-h-[70vh] object-contain rounded-4xl" />
+        </div>
         <div class="flex-1 mt-4 flex flex-col justify-between gap-4">
-            <div class="flex-1  rounded-4xl">
-                <NuxtImg src="/events/Temp1.png" alt="Event Image" class="w-full h-full  max-h-93.75 object-cover object-[40%] mb-4 rounded-4xl" />
+            <div class="flex-1 rounded-4xl">
+                <div class=" h-full max-h-93.75 relative  rounded-4xl overflow-hidden group">
+                    <div
+                    @click="imageIsOpen = true"
+                        class="overlay  cursor-zoom-in absolute grid place-content-center inset-0 bg-black/70 group-hover:opacity-100 opacity-0 transition-all">
+                        <NuxtImg src="/zoom-icon.svg" class="w-20" />
+                    </div>
+                    <NuxtImg src="/events/Temp1.png" alt="Event Image"
+                        class="w-full h-full max-h-93.75 object-cover object-[40%] mb-4" />
+                </div>
             </div>
             <SocialMedia />
         </div>
@@ -72,6 +84,7 @@ import meetingIcon from '/buttons/meeting-icon.png'
 import meetingIconActive from '/buttons/meeting-icon-active.png'
 
 const activeBtnIndex = ref(0)
+const imageIsOpen = ref(false);
 
 const buttons = [
     {
