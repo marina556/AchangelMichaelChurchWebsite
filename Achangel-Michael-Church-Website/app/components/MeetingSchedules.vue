@@ -1,10 +1,13 @@
 <template>
     <div>
-        Meeting Schedules
+        <ScheduleSectionUi title="">
+            Meeting Schedules
+        </ScheduleSectionUi>
     </div>
 </template>
 
 <script setup>
+
 
 </script>
 

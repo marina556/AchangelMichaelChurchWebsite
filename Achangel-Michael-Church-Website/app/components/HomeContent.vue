@@ -1,14 +1,16 @@
 <template>
-    <div class="flex gap-4">
-        <div class="flex-1">
-            <NuxtImg src="/events/Temp1.png" alt="Event Image" class="w-full h-auto object-contain my-4" />
+    <div class="flex gap-4 min-h-115">
+        <div class="flex-1 mt-4 flex flex-col justify-between gap-4">
+            <div class="flex-1 bg-red-200 rounded-4xl">
+                <NuxtImg src="/events/Temp1.png" alt="Event Image" class="w-full h-full object-cover object-[40%] mb-4 rounded-4xl" />
+            </div>
             <SocialMedia />
         </div>
 
         <div class="grid w-100 shrink-0 place-items-center">
-            <NuxtImg src="/logos/logo-2.svg" alt="Archangel Michael Church" class="z-10 -mt-32.5 h-64.75 w-100.5" />
+            <NuxtImg src="/logos/logo-2.svg" alt="Archangel Michael Church" class="z-10 -mt-32 h-64.75 w-100.5" />
 
-            <p class="mb-2 text-center text-2xl leading-5.5 font-medium text-beige">
+            <p class="mb-5 -mt-3 text-center text-2xl leading-5.5 font-medium text-beige-dark">
                 يَا رَبُّ، أَحْبَبْتُ مَحَلَّ بَيْتِكَ وَمَوْضِعَ مَسْكَنِ مَجْدِكَ
                 <span class="text-base font-normal">
                     (سفر المزامير 26: 8)
@@ -55,7 +57,7 @@
             </ul>
         </div>
 
-        <div class="flex-1">
+        <div class="flex-1  mt-4">
             <MassSchedule v-if="activeBtnIndex === 0" />
             <MeetingSchedules v-else-if="activeBtnIndex === 1" />
         </div>
@@ -86,7 +88,7 @@ const buttons = [
     },
     {
         title: 'تسجيل البيانات',
-        link: 'https://www.youtube.com/',
+        link: 'https://docs.google.com/forms/d/e/1FAIpQLSf-O242SGKoNS38Wy3KtXOUqHT9VesSICBY_p9v9JtFQSqxWw/viewform?usp=dialog',
         icon: loggedIcon,
         activeIcon: loggedIcon,
         classes: 'w-[3.8125rem] h-[4.375rem]',

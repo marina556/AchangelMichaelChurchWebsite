@@ -32,7 +32,7 @@ const socialMediaLinks = [
     {
         title: 'YouTube',
         icon: youtube,
-        link: 'https://www.youtube.com/channel/UC1234567890',
+        link: 'https://www.youtube.com/@ArchangelMichaelChurch-i7o',
     },
     {
         title: 'Location',
