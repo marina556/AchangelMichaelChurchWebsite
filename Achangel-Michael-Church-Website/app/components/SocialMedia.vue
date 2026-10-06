@@ -1,7 +1,7 @@
 <template>
     <div class="h-22.25  rounded-[3rem] border border-beige flex items-center justify-between gap-4 pe-4">
         <p
-            class="text-[2.1875rem] font-bold bg-beige text-white h-full w-max px-6 rounded-[3rem]  grid place-content-center">
+            class="text-[2rem] min-w-max font-bold bg-beige text-white h-full w-max px-6 rounded-[3rem]  grid place-content-center">
             تواصــل معنـــا</p>
         <ul class="flex items-center justify-between h-full gap-3 flex-row-reverse">
             <li v-for="(socialMedia, index) in socialMediaLinks" :key="index" class="flex items-center">
