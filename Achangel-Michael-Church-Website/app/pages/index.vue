@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full p-10">
+  <div class="w-full h-full sm:p-10 py-6 px-4">
     <div class="relative">
       <HomeSwiper />
       <BannerLogo />

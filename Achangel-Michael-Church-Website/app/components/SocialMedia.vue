@@ -1,9 +1,9 @@
 <template>
-    <div class="h-22.25  rounded-[3rem] border border-beige flex items-center justify-between gap-4 pe-4">
+    <div class="sm:h-22.25 h-[2.8125rem] rounded-[3rem] border border-beige flex items-center justify-between sm:gap-4 gap-2 pe-2 sm:pe-4">
         <p
-            class="text-[2rem] min-w-max font-bold bg-beige text-white h-full w-max px-6 rounded-[3rem]  grid place-content-center">
+            class="text-sm sm:text-[2rem] min-w-max font-bold bg-beige text-white h-full w-max px-3 sm:px-6 rounded-[3rem]  grid place-content-center">
             تواصــل معنـــا</p>
-        <ul class="flex items-center justify-between h-full gap-3 flex-row-reverse">
+        <ul class="flex items-center justify-between h-full sm:gap-3 gap-2 flex-row-reverse">
             <li v-for="(socialMedia, index) in socialMediaLinks" :key="index" class="flex items-center">
                 <a :href="socialMedia.link" target="_blank" rel="noopener noreferrer" :title="socialMedia.title">
                     <NuxtImg :src="socialMedia.icon" :alt="socialMedia.title" class="w-16 h-16" />

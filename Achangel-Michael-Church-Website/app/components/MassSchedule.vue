@@ -3,15 +3,15 @@
         <ScheduleSectionUi :title="section.title" v-for="(section, sectionIndex) in scheduleSections"
             :key="sectionIndex">
             <div class="grid dddd grid-cols-1 md:grid-cols-3 gap-4">
-                <div v-for="day in section.days" :key="day.day" class="min-w-0">
+                <div v-for="day in section.days" :key="day.day" class="grid grid-cols-3 items-center sm:block gap-4">
                     <h3 :class="titleClasses">
                         {{ day.day }}
                     </h3>
 
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-2 flex-1 col-span-2">
                         <div v-for="item in day.items" :key="item.title" :class="[
                             subsectionClasses,
-                            item.highlighted && 'bg-beige-light',
+                            item.highlighted && 'sm:bg-beige-light',
                         ]">
                             <h4 class="text-center mb-2 font-normal text-base">
                                 {{ item.title }}
@@ -130,7 +130,7 @@ const scheduleSections = [
 ]
 
 const titleClasses =
-    'font-medium text-[1.5rem] leading-[2.375rem] mb-4 text-center'
+    'font-medium text-[1.25rem] min-w-max sm:text-[1.5rem] leading-[2.375rem] sm:mb-4 text-center'
 
 const subsectionClasses =
     'border border-beige-light rounded p-2'

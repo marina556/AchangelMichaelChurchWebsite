@@ -5,6 +5,7 @@
         ref="containerRef"
         :init="false"
         @swiperslidechange="handleSlideChange"
+        class="sm:h-auto h-[13.375rem]"
       >
         <swiper-slide
           v-for="(slide, index) in slides"
@@ -13,21 +14,21 @@
           <NuxtImg
             :src="slide"
             alt="Church banner"
-            class="w-full h-auto rounded-4xl object-cover"
+            class="w-full h-full sm:h-auto rounded-[0.9375rem] sm:rounded-4xl object-cover"
           />
         </swiper-slide>
       </swiper-container>
 
       <!-- Custom pagination -->
       <div
-        class="absolute bottom-15 left-7.5 z-10 flex flex-col items-center gap-2"
+        class="absolute bottom-6 sm:bottom-15 left-4 sm:left-7.5 z-10 flex flex-col items-center gap-2"
       >
         <button
           v-for="(_, index) in slides"
           :key="index"
           type="button"
           :aria-label="`Go to slide ${index + 1}`"
-          class="h-16.25 w-10  rounded-full transition-all duration-300 border border-beige cursor-pointer text-2xl font-normal grid place-content-center"
+          class="sm:h-16.25 sm:w-10 w-[1.0625rem] h-[1.75rem]  rounded-full transition-all duration-300 border border-beige cursor-pointer text-[0.625rem] sm:text-2xl font-normal grid place-content-center"
           :class="
             activeIndex === index
               ? 'bg-beige text-black'
