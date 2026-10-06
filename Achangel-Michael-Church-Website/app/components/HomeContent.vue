@@ -29,7 +29,7 @@
                 </span>
             </p>
 
-            <ul class="flex gap-4">
+            <ul class="flex gap-4 items-center justify-center">
                 <li v-for="(button, index) in buttons" :key="button.title"
                     class="w-27.25 cursor-pointer shrink-0 rounded-b-3xl rounded-t-[4rem] bg-beige-light pb-4">
                     <!-- Navigation Link -->

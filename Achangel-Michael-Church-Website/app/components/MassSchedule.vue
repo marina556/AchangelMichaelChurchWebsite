@@ -52,7 +52,6 @@ const scheduleSections = [
                         from: '7:30',
                         to: '10:30',
                         period: 'صبـــاحاً',
-                        highlighted: true,
                     },
                 ],
             },
@@ -71,6 +70,8 @@ const scheduleSections = [
                         from: '7:00',
                         to: '9:30',
                         period: 'مســـاءاً',
+                        highlighted: true,
+
                     },
                 ],
             },
