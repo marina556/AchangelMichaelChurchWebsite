@@ -64,13 +64,13 @@ const scheduleSections = [
                         from: '8:30',
                         to: '10:30',
                         period: 'صبـاحاً',
+                        highlighted: true,
                     },
                     {
                         title: 'العشــية والتسبــحة',
                         from: '7:00',
                         to: '9:30',
                         period: 'مســـاءاً',
-                        highlighted: true,
                     },
                 ],
             },
@@ -129,7 +129,7 @@ const scheduleSections = [
 ]
 
 const titleClasses =
-    'font-medium text-[1.875rem] leading-[2.375rem] mb-4 text-center'
+    'font-medium text-[1.5rem] leading-[2.375rem] mb-4 text-center'
 
 const subsectionClasses =
     'border border-beige-light rounded p-2'

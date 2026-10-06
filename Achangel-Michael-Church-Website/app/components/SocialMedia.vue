@@ -5,7 +5,7 @@
             تواصــل معنـــا</p>
         <ul class="flex items-center justify-between h-full gap-3 flex-row-reverse">
             <li v-for="(socialMedia, index) in socialMediaLinks" :key="index" class="flex items-center">
-                <a :href="socialMedia.link" target="_blank" rel="noopener noreferrer">
+                <a :href="socialMedia.link" target="_blank" rel="noopener noreferrer" :title="socialMedia.title">
                     <NuxtImg :src="socialMedia.icon" :alt="socialMedia.title" class="w-16 h-16" />
                 </a>
             </li>
@@ -19,14 +19,11 @@ import whatsapp from '/socia-media/whatsapp.svg';
 import youtube from '/socia-media/youtube.svg';
 import location from '/socia-media/location.svg';
 import mail from '/socia-media/mail.svg';
+import bbsata from '/socia-media/bbsata.svg';
 
 const socialMediaLinks = [
-    // {
-    //     title: 'Facebook',
-    //     icon: facebook,
-    //     link: 'https://www.facebook.com/share/1FjbQwKvYa/?mibextid=wwXIfr',
-    // },
-       {
+
+    {
         title: 'Facebook',
         icon: facebook,
         link: 'https://www.facebook.com/share/1FjbQwKvYa/?mibextid=wwXIfr',
@@ -50,7 +47,12 @@ const socialMediaLinks = [
         title: 'Email',
         icon: mail,
         link: 'mailto:archangelmichael6october@gmail.com',
-    }]
+    },
+     {
+        title: 'ببساطة',
+        icon: bbsata,
+        link: 'https://www.facebook.com/profile.php?id=61595120033055',
+    },]
 </script>
 
 <style scoped></style>

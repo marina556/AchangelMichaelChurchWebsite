@@ -1,16 +1,16 @@
 <template>
-    <div class="flex gap-4 min-h-115">
+    <div class="flex gap-4 h-128">
         <div class="flex-1 mt-4 flex flex-col justify-between gap-4">
-            <div class="flex-1 bg-red-200 rounded-4xl">
-                <NuxtImg src="/events/Temp1.png" alt="Event Image" class="w-full h-full object-cover object-[40%] mb-4 rounded-4xl" />
+            <div class="flex-1  rounded-4xl">
+                <NuxtImg src="/events/Temp1.png" alt="Event Image" class="w-full h-full  max-h-93.75 object-cover object-[40%] mb-4 rounded-4xl" />
             </div>
             <SocialMedia />
         </div>
 
-        <div class="grid w-100 shrink-0 place-items-center">
+        <div class="flex flex-col  justify-between w-100 shrink-0">
             <NuxtImg src="/logos/logo-2.svg" alt="Archangel Michael Church" class="z-10 -mt-32 h-64.75 w-100.5" />
 
-            <p class="mb-5 -mt-3 text-center text-2xl leading-5.5 font-medium text-beige-dark">
+            <p class="text-center text-2xl -mt-8 leading-5.5 font-medium text-beige-dark">
                 يَا رَبُّ، أَحْبَبْتُ مَحَلَّ بَيْتِكَ وَمَوْضِعَ مَسْكَنِ مَجْدِكَ
                 <span class="text-base font-normal">
                     (سفر المزامير 26: 8)
@@ -57,7 +57,7 @@
             </ul>
         </div>
 
-        <div class="flex-1  mt-4">
+        <div class="flex-1">
             <MassSchedule v-if="activeBtnIndex === 0" />
             <MeetingSchedules v-else-if="activeBtnIndex === 1" />
         </div>
